@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Программа мастер-класса по настройке звука в церкви: теория, практика с группой прославления, работа с микшерным пультом и трансляцией">
+<meta name="keywords" content="звук, мастер-класс, MixStation, Midas MR18, церковь, звукорежиссура, обучение, микшер, аудио">
+<meta name="author" content="Церковная школа звука">
+<title>МК по Настройке Звука</title>
+<link rel="icon" href="img/midas.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary: #60EFFF;
+        --bg: #0B0F1A;
+        --card-bg: #101622;
+        --text: #E6EEF8;
+        --muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+    }
+    header {
+    position: relative;
+    background: url('img/midas.jpg') center/cover no-repeat;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 25px rgba(96, 239, 255, 0.7);
+    }
+    header::before {
+        content: '';
+        position: absolute;
+        top:0; left:0; width:100%; height:100%;
+        background: rgba(0,0,0,0.55);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+    .day {
+        margin-bottom: 30px;
+    }
+    .day h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--primary);
+        border-bottom: 2px solid var(--primary);
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+    .session {
+        background: var(--card-bg);
+        padding: 15px 20px;
+        border-radius: 12px;
+        margin-top: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .session:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+    .session h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        color: var(--primary);
+    }
+    .time {
+        font-weight: 600;
+        color: var(--muted);
+        margin-right: 5px;
+    }
+    ul {
+        padding-left: 20px;
+        margin: 8px 0;
+        color: var(--text);
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        border-top: 1px solid rgba(255,255,255,0.1);
+        margin-top: 40px;
+    }
+    @media(max-width:600px){
+        .hero-content h1 { font-size:1.5rem; }
+        .hero-content p { font-size:1rem; }
+        .session { padding:12px 15px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero-content">
+        <h1>🎚️ Мастер-класс по Настройке Звука</h1>
+        <p>Два дня практики, теории и живого микширования</p>
+    </div>
+</header>
+
+<div class="container">
+
+<div class="day">
+<h2>День 1 — Суббота</h2>
+<div class="session">
+<h3><span class="time">10:00 — 10:30</span> Введение</h3>
+<ul><li>Приветствие и представление</li><li>Зачем нужен звукорежиссёр в служении</li><li>Принципы командной работы</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">10:30 — 11:30</span> Основы звука</h3>
+<ul><li>Частота, громкость, динамика, звуковое давление</li><li>Линейный и инструментальный сигнал</li><li>Типы уровней сигнала</li><li>Чистота микса, частотные конфликты</li><li>Почему важно играть под клик</li><li>Вопросы</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">11:30 — 12:30</span> Звуковая система</h3>
+<ul><li>Midas MR18, сабы, мониторы</li><li>Каналы и рекомендации производителя</li><li>Mix Station: настройки интерфейса</li><li>FOH, AUX, Bus, FX</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">12:30 — 13:30</span> Обед / перерыв</h3>
+</div>
+<div class="session">
+<h3><span class="time">13:30 — 14:30</span> Мониторинг</h3>
+<ul><li>AUX-сенды</li><li>Баланс в ушах</li><li>Практика с музыкантами + 2 вокалиста</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">15:00 — 16:00</span> Практика <br> (1-я часть)</h3>
+<ul><li>Гейн-структура</li><li>Шумы и перегрузы</li><li>EQ — чистим грязь</li><li>Pre/Post-Fader / Pre/Post-EQ</li><li>Компрессоры и гейты</li><li>Частотные конфликты</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">16:15 — 17:00</span> Практика<br> (2-я часть)</h3>
+<ul><li>Баланс FOH и трансляции</li><li>Разделение сигналов FOH vs Stream</li><li>Проверка сабов и кроссовера</li><li>Исправление ошибок</li></ul>
+</div>
+</div>
+
+<div class="day">
+<h2>День 2 — Воскресенье</h2>
+<div class="session">
+<h3><span class="time">09:00 — 10:30</span> Репетиция</h3>
+<ul><li>Настройка группы</li><li>Гейны, EQ, мониторы</li><li>Проверка трансляции</li><li>Обучение по ходу</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">11:00 — 12:30</span> Богослужение</h3>
+<ul><li>Работа операторов с наставником</li><li>Коррекция в процессе</li><li>Трансляционный звук</li><li>Контроль динамики</li></ul>
+</div>
+<div class="session">
+<h3><span class="time">12:30 — 13:00</span> Разбор</h3>
+<ul><li>Что получилось, что улучшить</li><li>Вопросы</li></ul>
+</div>
+</div>
+
+</div>
+<footer>© МК по Настройке Звука — Поделитесь ссылкой с участниками</footer>
+
+</body>
+</html>
